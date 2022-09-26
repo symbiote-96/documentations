@@ -2,9 +2,9 @@
 
 As usual we need to prepare our OS to start working in it. For Archcraft we don't need to do much, this is because this distribution is so beautiful and so minimalist which is almost ready to work.
 
-## First Updating The System
+## First, Updating The System
 
-let's start with a system update.
+Let's start with a system update.
 
 > sudo pacman -Syuu
 
@@ -30,17 +30,19 @@ For that we'll need to write these lines of code on our terminal.
 >
 > 5. ssh-keygen -t ed25519 -C "your_email@example.com"
 >
-> - Note: If you are using a legacy system that doesn't support the Ed25519 algorithm, use:
->
-> - ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+>> Note: If you are using a legacy system that doesn't support the Ed25519 algorithm, use:
+>>
+>> ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
-That is all. Finally we can check our changes with this command.
+That is all. Finally we can check our changes with these commands.
 
 > git config --list
+>
+> ls -al ~/.ssh
 
 ## Third, Install Visual Studio Code (vscode)
 
-I know, I know. Some people could prefer to keep the system in its essence, minimalist, and use some editor like Neovim. But let's be practical. Everyone use vscode in the industry. If you decide to use vscode, run this.
+I know, I know. Some people could prefer to keep the system in its essence, minimalist, and use some editor like Neovim. But let's be practical. Everyone uses vscode in the industry. If you decide to use vscode, run this.
 
 > sudo pacman -S vscode
 
