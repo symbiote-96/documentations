@@ -1,6 +1,6 @@
 # How to install MariaDB
 
-Arch Linux favors MariaDB, a community-developed fork of MySQL, aiming for drop-in compatibility. In this documentation, we are going to tech how to install **MariaDB**, and we are going to show how to solve some "problems" of security that stop us to work comfortably with a frontend client.
+Arch Linux favors MariaDB, a community-developed fork of MySQL, aiming for drop-in compatibility. In this documentation, we are going to teach how to install **MariaDB**, and we are going to show how to solve some "problems" of security that stop us to work comfortably with a frontend client.
 
 ## Installation
 
@@ -44,13 +44,13 @@ To make the development experience more enjoyable, install a frontend client. In
 
 > sudo pacman -S mysql-workbench
 
-Check if you can to connect to the server from MySQL Workbench. If not the case, this could be due to several things.
+Check if you can connect to the server from MySQL Workbench. If not the case, this could be due to several things.
 
 First, it happened to me that Archcraft doesn't bring a package called "libsecret", then I can't save my password in my client. To solve this, run:
 
 > sudo pacman -S gnome-keyring && sudo pacman -S libsecret
 
-Second, another inconvenience that happened to me was "Access denied for user 'root'@'localhost'". It's because MySql 5.7 by default allow connecting with socket. To allow connection with root and password, then update the values in the table with the next commands:
+Second, another inconvenience that happened to me was "Access denied for user 'root'@'localhost'". It's because MySql 5.7 by default allows connecting with socket. To allow connection with root and password, then update the values in the table with the next commands:
 
 1) Enter to the server
 
