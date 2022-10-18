@@ -54,7 +54,7 @@ Second, another inconvenience that happened to me was "Access denied for user 'r
 
 1) Enter to the server
 
-> sudo mysql -u root -p
+> sudo mariadb -u root -p
 
 2) Show the user authentication tables
 
